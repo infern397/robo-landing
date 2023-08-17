@@ -1,0 +1,438 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.phone {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header {
+    color: #fff;
+    width: 100%;
+    background-color: #141024;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+}
+
+.header__top {
+    width: 100%;
+    background-color: #141024;
+}
+
+.header__container {
+    padding: 0 100px;
+}
+
+.menu__list-link {
+    font-size: 20px;
+}
+
+.menu__list-link:hover {
+    color: #d52027;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.top {
+    background-color: #141024;
+}
+
+.top__inner {
+    height: 972px;
+    position: relative;
+}
+
+.top__content {
+    width: 516px;
+    color: #fff;
+}
+
+.top__image {
+    width: 783px;
+    position: absolute;
+    right: -190px;
+    bottom: 0;
+}
+
+.top__title {
+    padding-top: 266px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.top__text {
+    font-size: 20px;
+    padding: 20px 0 50px;
+}
+
+.top__button {
+    padding: 25px 54px;
+    border-radius: 5px;
+    background-color: #D52027;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.about__desc {
+    padding: 120px 0 60px;
+    width: 891px;
+    font-size: 30px;
+    color: #141024;
+}
+
+.about__desc-bold {
+    font-weight: 600;
+}
+
+.about__numbers {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 120px;
+    
+}
+
+.numbers__item {
+    width: 260px;
+}
+
+.numbers__number {
+    font-size: 70px;
+    font-weight: 600;
+    color: #D52027;
+    
+}
+
+.numbers__desc {
+    font-size: 18px;
+    color: #141024;
+    opacity: 0.7;
+}
+
+.after {
+    background-color: #F9F9F9;
+}
+
+.after__inner {
+    padding: 100px 0;
+}
+
+.after__title {
+    color: #141024;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+.after__list {
+    display: flex;
+    gap: 40px;
+}
+
+.after__item {
+    position: relative;
+}
+
+.item__title {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.after__image {
+    position: absolute;
+    top: 0;
+    left: 115px;
+}
+
+.after__info {
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: -66px;
+    left: 115px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.after__info-open {
+    transition: opacity 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.trainers__inner {
+    padding-top: 120px;
+}
+
+.trainers__title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.trainers__list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    transition: all 1s;
+    left: 0;
+}
+
+
+.trainer__image {
+    border-radius: 20px;
+}
+
+.trainer__name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.trainer__descr {
+    font-size: 18px;
+    color: #141024;
+    opacity: 0.7;
+}
+
+.trainer__more {
+    color: #D52027;
+    font-size: 18px;
+}
+
+.trainers__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls__slider {
+    position: relative;
+    width: 360px;
+    height: 5px;
+    background-color: #14102414;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.controls__slider-mover {
+    position: absolute;
+    width: 260px;
+    height: 5px;
+    background-color: #141024;
+    border-radius: 40px;
+    left: 0;
+    transition: left 1s;
+}
+
+
+.controls__arrows {
+    margin-right: 10px;
+}   
+
+.arrows__left {
+    margin-right: 10px;
+}
+
+
+.packages__inner {
+    padding-top: 120px;
+}
+
+.packages__list {
+    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.packages__card {
+    width: 360px;
+    height: 460px;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 16, 36, 0.20);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all .5s;
+}
+
+.package__name {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 63px;
+    transition: margin-bottom .5s;
+}
+
+.package__price {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.package__desc {
+    font-size: 18px;
+}
+
+.package__button {
+    width: 280px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.packages__card:hover {
+    background-color: #141024;
+    color: #fff;
+    width: 360px;
+    height: 500px;
+    transition: all .5s;
+}
+
+.packages__card:hover .package__name {
+    margin-bottom: 83px;
+    transition: margin-bottom .5s;
+}
+
+
+.registration {
+    background-color: #D52027;
+    position: relative;
+    background-image: url(/images/Mask\ Group.png);
+}
+
+.registration__container {
+    width: 1040px;
+}
+
+.registration__inner {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__content {
+    width: 476px;
+    margin-top: 106px;
+}
+
+.registration__title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.registration__desc {
+    font-size: 20px;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 87px;
+    width: 500px;
+    gap: 10px;
+}
+
+input {
+    width: 500px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    padding: 19px 20px;
+    color: rgba(40, 41, 68, 0.70);
+    font-size: 18px;
+}
+
+.registration__button {
+    width: 500px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    background-color: #141024;
+    color: #fff;
+    margin-bottom: 87px;
+    font-size: 18px;
+}
+
+
+footer {
+    color: #FFFFFF;
+    width: 100%;
+    background-color: #141024;
+}
+
+.footer__container {
+    padding: 0 100px;
+    height: 159px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 111px;
+}
+
+.footer__logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer__desc {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+}
