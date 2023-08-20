@@ -24,7 +24,7 @@ rightArrow.addEventListener("click", () => {
 })
 
 function move(direction) {
-    let list = document.querySelector(".trainers__list");
+    list = document.querySelector(".trainers__list");
 
     let x = list.style.left;
     let imageMovingLength = 440
